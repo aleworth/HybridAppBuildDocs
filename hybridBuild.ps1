@@ -7,8 +7,5 @@ Set-Location .\build\
 cordova plugin add cordova-plugin-customurlscheme --variable URL_SCHEME=$scheme
 cordova plugin add cordova-plugin-browser
 Set-Location ..
-npm run package
-npm run prepare:android
-npm run build
 
 $Output = $wshell.Popup("The hybrid build has completed!")
